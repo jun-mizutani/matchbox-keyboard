@@ -1,6 +1,7 @@
 keyboardsdir = $(datadir)/matchbox-keyboard
 
 IMGS  = arrow.png      arrows.png       \
+        alt.png  esc.png  ctrl.png      \
         return.png      shift.png       \
         shift_2.png     shift_3.png     \
 	shift_caps.png			\
@@ -23,6 +24,7 @@ IMGS  = arrow.png      arrows.png       \
 
 fragment_in_files = \
 		base-fragment.xml.in	   \
+		base-fragment-ja_JP.xml.in \
 		base-fragment-en_US.xml.in \
 		base-fragment-ar_EG.xml.in \
 		base-fragment-ca_ES.xml.in \
@@ -50,6 +52,7 @@ fragment_in_files = \
 
 variant_in_files = $(fragment_in_files) \
 		keyboard.xml.in \
+		keyboard-jp.xml.in \
 		keyboard-lq1.xml.in \
 		keyboard-symbol.xml.in \
 		keyboard-numpad-extended.xml.in \
